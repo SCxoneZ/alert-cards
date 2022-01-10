@@ -10,6 +10,8 @@ body{
 	border-radius: 2px;
 	/* overflow: hidden; */
 	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .card p {
