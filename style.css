@@ -23,9 +23,26 @@ body{
 	border: 0.25px solid #90D1FF;
 	display: flex;
 	align-items: center;
-	color: #2D3BFF;
+	color: #00A2CE;
 	font-weight: bold;
-	/* justify-content: center; */
+}
+
+.card-danger{
+	background-color: #FF7373;
+	border: 0.25px solid #B53636;
+	display: flex;
+	align-items: center;
+	color: #8F2626;
+	font-weight: bold;
+}
+
+.card-success{
+  background-color: #BBFFBE;
+	border: 0.25px solid #54BD59;
+	display: flex;
+	align-items: center;
+	color: #039A09;
+	font-weight: bold;
 }
 
 .card-info::before{
@@ -40,10 +57,40 @@ body{
 	margin-right: 15px;
 }
 
+.card-danger::before{
+	content: '';
+	background-image: url(img/danger.png);
+	display: inline-block;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	left: 10px;
+	margin-right: 15px;
+}
+
+.card-success::before{
+	content: '';
+	background-image: url(img/check.png);
+	display: inline-block;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	left: 10px;
+	margin-right: 15px;
+}
+
+
+
 .alert-close{
 	background-color: transparent;
 	border: none;
 	position: absolute;
 	left: 90%;
 	right: 180px;
+}
+
+.alert-close:hover{
+  transform: scale();
 }

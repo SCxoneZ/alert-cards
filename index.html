@@ -2,26 +2,33 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alert cards</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alert cards</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<div class="card card-info">
-		<p>Lorem ipsum dolor sit amet, consectetur adoribus!</p>
-		<button class="alert-close">×</button>
-	</div>
-	
-	<div class="card card-info">
-		<p>Lorem ipsum dolor sit amet, consectetur adoribus!</p>
-		<button class="alert-close">×</button>
-	</div>
+  <div class="card card-info">
+    <p>Lorem ipsum dolor sit amet, consectetur adoribus!</p>
+    <button class="alert-close" onclick="this.parentElement.remove()">×</button>
+  </div>
 
-	
-	<script src="script.js"></script>
+  <div class="card card-danger">
+    <p>Lorem ipsum dolor sit amet, consectetur adoribus!</p>
+    <button class="alert-close" onclick="this.parentElement.remove()">×</button>
+  </div>
+
+  <div class="card card-success">
+    <p>Lorem ipsum dolor sit amet, consectetur adoribus!</p>
+    <button class="alert-close" onclick="this.parentElement.remove()">×</button>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
